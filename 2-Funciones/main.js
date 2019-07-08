@@ -1,9 +1,9 @@
 "use strict";
-let superheroe = "Flash";
+var superheroe = "Flash";
 function imprime_heroe() {
     return superheroe;
 }
-let activar_batisenal = function () {
+var activar_batisenal = function () {
     return "Batisenal activada.";
 };
 console.log(imprime_heroe());
@@ -11,7 +11,7 @@ console.log(activar_batisenal());
 function nombreCompleto(nombre, apellido) {
     return nombre + apellido;
 }
-let nombre = nombreCompleto("clark", "kent");
+var nombre = nombreCompleto("clark", "kent");
 console.log(nombre);
 function nombreCompletoDos(nombre, apellido) {
     if (apellido) {
@@ -21,9 +21,10 @@ function nombreCompletoDos(nombre, apellido) {
         return nombre;
     }
 }
-let nombredos = nombreCompletoDos("Barry", "Allen");
+var nombredos = nombreCompletoDos("Barry", "Allen");
 console.log(nombredos);
-function nombreCompletoTres(nombre, apellido, capitalizado = false) {
+function nombreCompletoTres(nombre, apellido, capitalizado) {
+    if (capitalizado === void 0) { capitalizado = false; }
     if (capitalizado) {
         return capitalizar(nombre) + " " + capitalizar(apellido);
     }
@@ -34,12 +35,16 @@ function nombreCompletoTres(nombre, apellido, capitalizado = false) {
 function capitalizar(palabra) {
     return palabra.charAt(0).toUpperCase() + palabra.substring(1).toLowerCase();
 }
-let nombretres = nombreCompletoTres("clark", "kent", true);
+var nombretres = nombreCompletoTres("clark", "kent", true);
 console.log(nombretres);
-function nombreCompletoCuatro(nombre, ...losDemasParametros) {
+function nombreCompletoCuatro(nombre) {
+    var losDemasParametros = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        losDemasParametros[_i - 1] = arguments[_i];
+    }
     return nombre + " " + losDemasParametros.join(" ");
 }
-let nombrecuatro = nombreCompletoCuatro("clark", "kent", "zapata", "arango");
+var nombrecuatro = nombreCompletoCuatro("clark", "kent", "zapata", "arango");
 console.log(nombrecuatro);
 function suma(a, b) {
     return a + b;
@@ -50,7 +55,7 @@ function saludar(nombre) {
 function salvarMundo() {
     console.log("El mundo esta salvado!");
 }
-let miFuncion;
+var miFuncion;
 miFuncion = 10;
 miFuncion = suma;
 console.log(miFuncion(5, 5));

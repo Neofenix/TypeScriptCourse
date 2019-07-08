@@ -1,20 +1,20 @@
 "use strict";
-let batimovil = {
+var batimovil = {
     carroceria: "Negra",
     modelo: "6x6",
     antibalas: true,
     pasajeros: 4
 };
-let bumblebee = {
+var bumblebee = {
     carroceria: "Amarillo con negro",
     modelo: "4x2",
     antibalas: true,
     pasajeros: 4,
-    disparar() {
+    disparar: function () {
         console.log("Disparando");
     }
 };
-let vill = [{
+var vill = [{
         nombre: "Lex Luthor",
         edad: 54,
         mutante: false
@@ -27,15 +27,15 @@ let vill = [{
         edad: undefined,
         mutante: true
     }];
-let charles = {
+var charles = {
     poder: "psiquico",
     estatura: 1.78
 };
-let apocalipsis = {
+var apocalipsis = {
     lider: true,
     miembros: ["Magneto", "Tormenta", "Psylocke", "Angel"]
 };
-let mystique;
+var mystique;
 mystique = charles;
 mystique = apocalipsis;
 //# sourceMappingURL=ejercicio.js.map

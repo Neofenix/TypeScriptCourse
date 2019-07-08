@@ -1,5 +1,5 @@
 "use strict";
-let flash = {
+var flash = {
     nombre: "Flash",
     edad: 24,
     poderes: ["Puede correr muy rapido", "Viajar por el tiempo"]
@@ -9,48 +9,48 @@ flash = {
     edad: 500,
     poderes: ["Poder volar"]
 };
-let flashtwo = {
+var flashtwo = {
     nombre: "Flash",
     edad: 24,
     poderes: ["Puede correr muy rapido", "Viajar por el tiempo"]
 };
-let flashthree = {
+var flashthree = {
     nombre: "Flash",
     edad: 24,
     poderes: ["Puede correr muy rapido", "Viajar por el tiempo"],
-    getNombre() {
+    getNombre: function () {
         return this.nombre;
     }
 };
 flashthree.getNombre();
-let flashfour = {
+var flashfour = {
     nombre: "Clark",
     edad: 500,
     poderes: ["Poder volar", "Super Velocidad"],
-    getNombre() {
+    getNombre: function () {
         return this.nombre;
     }
 };
-let flashfive = {
+var flashfive = {
     nombre: "Clark",
     edad: 500,
     poderes: ["Poder volar", "Super Velocidad", 23],
-    getNombre() {
+    getNombre: function () {
         return this.nombre;
     }
 };
-let loquesea;
+var loquesea;
 loquesea = "Juan";
 loquesea = 10;
 loquesea = {
     nombre: "Flash",
     edad: 56,
     poderes: [],
-    getNombre() {
+    getNombre: function () {
         return "Juan";
     }
 };
-let cosa = function () {
+var cosa = function () {
     return null;
 };
 console.log(typeof cosa);

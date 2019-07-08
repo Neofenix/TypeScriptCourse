@@ -2,22 +2,27 @@
 function sumar(a, b) {
     return a + b;
 }
-let contar = function (heroes) {
+var contar = function (heroes) {
     return heroes.length;
 };
-let superHeroes = ["Flash", "Arrow", "Superman", "Linterna Verde"];
+var superHeroes = ["Flash", "Arrow", "Superman", "Linterna Verde"];
 contar(superHeroes);
-function llamarBatman(llamar = true) {
+function llamarBatman(llamar) {
+    if (llamar === void 0) { llamar = true; }
     if (llamar) {
         console.log("Batiseñal activada");
     }
 }
 llamarBatman();
-function unirheroes(...personas) {
+function unirheroes() {
+    var personas = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        personas[_i] = arguments[_i];
+    }
     return personas.join(", ");
 }
 function noHaceNada(a, b, c, d) {
 }
-let noHaceNadaTampoco;
+var noHaceNadaTampoco;
 noHaceNadaTampoco = noHaceNada;
 //# sourceMappingURL=ejercicio.js.map

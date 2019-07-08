@@ -1,7 +1,7 @@
 "use strict";
-let esSuperman = true;
-let esBatman;
-let esAcuaman = true;
+var esSuperman = true;
+var esBatman;
+var esAcuaman = true;
 if (esSuperman) {
     console.log("Estamos salvados");
 }
@@ -18,10 +18,10 @@ else {
 function convertirClark() {
     return false;
 }
-let avengers = 3;
-let villanos;
+var avengers = 3;
+var villanos;
 villanos = 0;
-let otros = 2;
+var otros = 2;
 if (avengers > villanos) {
     console.log("Estamos Salvados!");
 }
@@ -30,19 +30,19 @@ else {
 }
 otros = 123;
 otros = 123.12;
-let batmantwo = "Batman";
-let linternaVerde = "Linterna Verde";
-let volcanNegro = "Volcán Negro";
+var batmantwo = "Batman";
+var linternaVerde = "Linterna Verde";
+var volcanNegro = "Volcán Negro";
 console.log(batmantwo);
 console.log(linternaVerde);
 console.log(volcanNegro);
-let concatenar = "Los héroes: " + batmantwo + "," + linternaVerde + "," + volcanNegro;
+var concatenar = "Los héroes: " + batmantwo + "," + linternaVerde + "," + volcanNegro;
 console.log(concatenar);
-let concatenartwo = `los héroes son: ${batmantwo}, ${linternaVerde},${volcanNegro}`;
+var concatenartwo = "los h\u00E9roes son: " + batmantwo + ", " + linternaVerde + "," + volcanNegro;
 console.log(concatenartwo);
-let venga;
-let existe;
-let derrotas;
+var venga;
+var existe;
+var derrotas;
 venga = "Dr. Strange";
 console.log(venga.charAt(0));
 venga = 150.5555;
@@ -51,10 +51,10 @@ venga = true;
 console.log(venga);
 console.log(existe);
 console.log(derrotas);
-let arr = [1, 2, 3, 4];
-let villa = ["Omega rojo", "Dormammu", "Duende Verde"];
+var arr = [1, 2, 3, 4];
+var villa = ["Omega rojo", "Dormammu", "Duende Verde"];
 console.log(villa[0].charAt(0));
-let heroe = ["Dr. Strange", 100, true];
+var heroe = ["Dr. Strange", 100, true];
 heroe.push(true);
 console.log(heroe);
 var Volumen;
@@ -63,18 +63,18 @@ var Volumen;
     Volumen[Volumen["medio"] = 2] = "medio";
     Volumen[Volumen["max"] = 10] = "max";
 })(Volumen || (Volumen = {}));
-let audio = Volumen.medio;
+var audio = Volumen.medio;
 console.log(audio);
 console.log(Volumen);
 console.log(Volumen[10]);
 function llamar_batman() {
     console.log("Mostrar la batiseñal");
 }
-let mensaje = llamar_batman();
-let cualquierValor = "Cualquier cosa";
-let largoDelString = cualquierValor.length;
+var mensaje = llamar_batman();
+var cualquierValor = "Cualquier cosa";
+var largoDelString = cualquierValor.length;
 console.log(largoDelString);
-let nada = undefined;
-let ironman;
+var nada = undefined;
+var ironman;
 ironman = "Tony";
 //# sourceMappingURL=main.js.map
