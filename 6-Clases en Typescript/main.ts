@@ -72,8 +72,6 @@ class AvengerTwo{
         console.log("Get nombre protegido")
         return this.nombre
     }
-
-
 }
 
 
