@@ -33,7 +33,7 @@ class VillanoDecorado{
 //Decorador Factory
 function imprimirConsola(imprimir:boolean):Function{
     if(imprimir ){
-        return consola;   //Retornar la funcion que sirve como decorador de clase
+        return consola;   //Retornar la funcion que sirve como decorador de clase o el que necesite, en este caso la funcion consola que sirve como decorador
     }else{
         return () => {};  //return function () {};
     }
@@ -150,14 +150,17 @@ console.log(luthor2);
 
 //**Decorador de parametros */
 
+function parametroo(target:any, metodo:string, index:number){
+    console.log(target,metodo,index);
+}
 class Villano3 {
 
     constructor(public nombre:string){
     }
 
-    imprimir(plan:boolean, mensaje:string):void{
+    imprimir(plan:boolean, @parametroo mensaje:string):void{
         if(plan){
-            console.log("El plan es:")
+            console.log("El plan es:" + mensaje);
         }
         else{
             console.log(mensaje);
